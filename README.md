@@ -39,8 +39,10 @@ Create a virtual environment to manage dependencies:
 ### Windows
 
  ```sh
-venv\Scripts\activate ```
-Mac/Linux
+venv\Scripts\activate
+```
+### Mac/Linux
+
  ```sh
 source venv/bin/activate
   ```
@@ -71,7 +73,7 @@ Contributions are welcome. Please open an issue or submit a pull request to cont
 
 ### License
 MIT
-###  @sixsicsix06
+###  Twitter:   @sixsicsix06
 
 
 
