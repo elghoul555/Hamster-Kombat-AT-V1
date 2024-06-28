@@ -23,8 +23,14 @@ A simple application for automatic mining with a hamster character.
 
 ## Step 2: Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
-```sh
+
+```bash
 cd Hamster-Kombat-AT-V1
+
+------------------------------------
+
+### Step 3: Create a Virtual Environment (Optional but Recommended)
+Create a virtual environment to manage dependencies:
 
 
 
