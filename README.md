@@ -49,6 +49,17 @@ source venv/bin/activate
 ### Step 4: Install Dependencies
 Ensure you are in the project directory.
 Run the following command to install the necessary libraries:
+ ```sh
+pip install -r requirements.txt.
+  ```
+
+### Step 5: Run the Application
+Ensure the virtual environment is activated (if you created one).
+Run the application:
+ ```sh
+python ham.py
+  ```
+
 
 
 
