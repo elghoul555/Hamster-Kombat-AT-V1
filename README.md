@@ -2,9 +2,7 @@
 
 A simple application for automatic mining with a hamster character.
 
-<img src="https://github.com/elghoul555/Hamster-Kombat-AT-V1/blob/main/HAMSTER.gif" alt="Descripción de la imagen" width="250" height="250">
-
-
+<img src="https://github.com/elghoul555/Hamster-Kombat-AT-V1/blob/main/HAMSTER.gif" alt="Descripción de la imagen" width="600" height="250">
 
 
 ## Features
