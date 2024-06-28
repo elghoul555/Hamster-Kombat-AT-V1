@@ -66,7 +66,12 @@ python ham.py
 + Select Boost Level: Choose the boost level for the hamster from the dropdown menu
 + Language Support: Use the "Language" menu to switch between supported languages (English, Spanish, Portuguese, Italian, Chinese, Taiwanese, Japanese, and Hindi).
 
+###Contributing
+Contributions are welcome. Please open an issue or submit a pull request to contribute.
 
+### License
+MIT
+###  @sixsicsix06
 
 
 
