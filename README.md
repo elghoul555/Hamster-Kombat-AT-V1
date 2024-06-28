@@ -2,6 +2,9 @@
 
 A simple application for automatic mining with a hamster character.
 
+![hamster app](https://github.com/elghoul555/Hamster-Kombat-AT-V1/blob/main/HAMSTER.gif)
+
+
 ## Features
 - Automatic mining with double-click every 150 ms.
 - Selection of energy and boost levels.
