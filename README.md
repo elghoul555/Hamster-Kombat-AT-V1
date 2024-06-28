@@ -30,18 +30,21 @@ After cloning the repository, navigate to the project directory:
 
 ### Step 3: Create a Virtual Environment (Optional but Recommended)
 Create a virtual environment to manage dependencies:
-
-`python -m venv venv`
+ ```sh
+python -m venv venv
+  ```
 
 **Activate the virtual environment:**
 
 Windows
 
-`venv\Scripts\activate`
-
+ ```sh
+venv\Scripts\activate
+  ```
 Mac/Linux
-
-`source venv/bin/activate`
+ ```sh
+source venv/bin/activate
+  ```
 
 ### Step 4: Install Dependencies
 Ensure you are in the project directory.
