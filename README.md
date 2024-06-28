@@ -23,17 +23,18 @@ A simple application for automatic mining with a hamster character.
 
 ### Step 2: Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
-
+```sh
 cd Hamster-Kombat-AT-V1
 
 ### Step 3: Create a Virtual Environment (Optional but Recommended)
 Create a virtual environment to manage dependencies:
-
+```sh
 python -m venv venv
 
 Activate the virtual environment:
 
 Windows:
+```sh
 venv\Scripts\activate
 
 Mac/Linux:
