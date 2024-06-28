@@ -20,11 +20,13 @@ A simple application for automatic mining with a hamster character.
 3. Run the following command to clone the repository:
    ```sh
    git clone https://github.com/your-github-username/Hamster-Kombat-AT-V1.git
+   ```
 
 ## Step 2: Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
-
-   ```sh Cd Hamster-Kombat-AT-V1   ```sh
+ ```sh
+    Cd Hamster-Kombat-AT-V1  
+  ```
 
 ### Step 3: Create a Virtual Environment (Optional but Recommended)
 Create a virtual environment to manage dependencies:
