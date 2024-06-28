@@ -22,8 +22,9 @@ A simple application for automatic mining with a hamster character.
    git clone https://github.com/your-github-username/Hamster-Kombat-AT-V1.git
    ```
 
-## Step 2: Navigate to the Project Directory
+### Step 2: Navigate to the Project Directory
 After cloning the repository, navigate to the project directory:
+
  ```sh
     Cd Hamster-Kombat-AT-V1  
   ```
@@ -36,7 +37,7 @@ python -m venv venv
 
 **Activate the virtual environment:**
 
-Windows
+### Windows
 
  ```sh
 venv\Scripts\activate
@@ -59,6 +60,14 @@ Run the application:
  ```sh
 python ham.py
   ```
+### Using the Application
+
++ Start Mining: Press the "Start Mining (F2)" button or press F2 to start automatic mining
++ Stop Mining: Press the "Stop (F3)" button or press F3 to stop automatic mining.
++ Select Energy Level: Choose the energy level for the hamster from the dropdown menu.
++ Select Boost Level: Choose the boost level for the hamster from the dropdown menu
++ Language Support: Use the "Language" menu to switch between supported languages (English, Spanish, Portuguese, Italian, Chinese, Taiwanese, Japanese, and Hindi).
+
 
 
 
