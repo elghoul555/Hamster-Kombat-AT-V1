@@ -5,7 +5,6 @@ from tkinter import ttk, StringVar, OptionMenu, Frame
 import pyautogui
 from pynput import keyboard
 import pyperclip  # Para copiar al portapapeles
-from PIL import Image, ImageTk, ImageSequence
 
 class HamsterKombat:
     def __init__(self, master):
@@ -138,7 +137,7 @@ class HamsterKombat:
         self.status = StringVar()
         self.status.set(self.translations[self.current_language]["status"] + self.translations[self.current_language]["waiting"])
         self.time_remaining = StringVar()
-        self.time_remaining.set("00:00")
+        self.time_remaining.set("00:00:00")
 
         # Widgets de la interfaz de usuario
         self.create_widgets()
@@ -216,24 +215,7 @@ class HamsterKombat:
         self.footer_frame = tk.Frame(self.master)
         self.footer_frame.pack(side="bottom", fill="x")
 
-        self.gif_label = tk.Label(self.footer_frame)
-        self.gif_label.pack()
-
-        self.load_gif()
-
         self.create_copyright_label()
-
-    def load_gif(self):
-        self.gif_image = Image.open("hamster_dance.gif")
-        self.gif_image = self.gif_image.resize((32, 32), Image.LANCZOS)
-        self.frames = [ImageTk.PhotoImage(img) for img in ImageSequence.Iterator(self.gif_image)]
-        self.animate_gif(0)
-
-    def animate_gif(self, frame_index):
-        frame = self.frames[frame_index]
-        self.gif_label.config(image=frame)
-        next_frame_index = (frame_index + 1) % len(self.frames)
-        self.master.after(100, self.animate_gif, next_frame_index)
 
     def copy_wallet_address(self):
         pyperclip.copy(self.wallet_address)
@@ -256,13 +238,11 @@ class HamsterKombat:
 
     def create_copyright_label(self):
         self.copyright_label = tk.Label(self.footer_frame, text=self.translations[self.current_language]["copyright"], fg="dark blue")
-        self.gif_label.pack_forget()
-        self.gif_label.pack()
         self.copyright_label.pack()
 
     def update_copyright_label(self):
         for widget in self.footer_frame.winfo_children():
-            if isinstance(widget, tk.Label) and widget != self.gif_label:
+            if isinstance(widget, tk.Label):
                 widget.destroy()
         self.create_copyright_label()
 
@@ -296,7 +276,7 @@ class HamsterKombat:
                 self.energy = self.current_energy - deficit_per_second * elapsed_time
                 self.update_progress(elapsed_time, total_time)
                 remaining_time = total_time - elapsed_time
-                self.time_remaining.set(time.strftime("%M:%S", time.gmtime(remaining_time)))
+                self.time_remaining.set(time.strftime("%H:%M:%S", time.gmtime(remaining_time)))
 
                 if self.energy <= 0:
                     self.energy = 0
@@ -315,7 +295,7 @@ class HamsterKombat:
             self.energy = min(self.current_energy, elapsed_time)
             self.update_progress(elapsed_time, total_recharge_time, charging=True)
             remaining_time = total_recharge_time - elapsed_time
-            self.time_remaining.set(time.strftime("%M:%S", time.gmtime(remaining_time)))
+            self.time_remaining.set(time.strftime("%H:%M:%S", time.gmtime(remaining_time)))
 
             if self.energy >= self.current_energy:
                 self.energy = self.current_energy
